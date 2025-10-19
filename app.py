@@ -89,4 +89,5 @@ def run_bot():
 if __name__ == "__main__":
     threading.Thread(target=run_bot).start()  # Botni alohida oqimda ishga tushirish
     print("🌐 Flask server ishga tushdi...")
-    app.run(host="0.0.0.0", port=8000, debug=True)
+    port = int(os.environ.get("PORT", 8000))  # Render beradi yoki default 8000
+    app.run(host="0.0.0.0", port=port, debug=True)
