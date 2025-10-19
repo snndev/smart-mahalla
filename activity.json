@@ -3,14 +3,6 @@
     "action": "Tizimga kirish",
     "details": "hokim tizimga kirdi",
     "username": "hokim",
-    "timestamp": "2025-10-13T20:35:44.582235",
-    "time_display": "20:35",
-    "date_display": "13.10.2025"
-  },
-  {
-    "action": "Tizimga kirish",
-    "details": "hokim tizimga kirdi",
-    "username": "hokim",
     "timestamp": "2025-10-13T21:24:19.384311",
     "time_display": "21:24",
     "date_display": "13.10.2025"
@@ -398,5 +390,13 @@
     "timestamp": "2025-10-16T10:20:34.445194",
     "time_display": "10:20",
     "date_display": "16.10.2025"
+  },
+  {
+    "action": "Tizimga kirish",
+    "details": "hokim tizimga kirdi",
+    "username": "hokim",
+    "timestamp": "2025-10-19T19:30:03.698287",
+    "time_display": "19:30",
+    "date_display": "19.10.2025"
   }
 ]
