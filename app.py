@@ -76,10 +76,6 @@ def page_not_found(e):
 # === TELEGRAM BOT QISMI ===
 bot = telebot.TeleBot(BOT_TOKEN)
 
-@bot.message_handler(commands=['start'])
-def start_handler(message):
-    bot.reply_to(message, "Salom jigar! 😎 Flask bilan birga ishlaydigan bot ishlayapti!")
-
 def run_bot():
     print("🤖 Bot ishga tushdi...")
     bot.infinity_polling()
