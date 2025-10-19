@@ -12,6 +12,7 @@ import threading
 import secrets
 from datetime import datetime, timedelta
 import telebot
+from telegram.ext import Update, ContextTypes, ApplicationBuilder, CommandHandler, CallbackQueryHandler
 from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for, send_file
 from functools import wraps
