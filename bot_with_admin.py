@@ -11,8 +11,8 @@ import asyncio
 import threading
 import secrets
 from datetime import datetime, timedelta
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
-from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
+import telebot
+from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for, send_file
 from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
