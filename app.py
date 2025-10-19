@@ -3,6 +3,7 @@ import threading
 import telebot
 import os
 from dotenv import load_dotenv
+import subprocess
 
 # .env fayldan tokenni o‘qish
 load_dotenv()
@@ -75,6 +76,13 @@ def page_not_found(e):
 
 # === TELEGRAM BOT QISMI ===
 bot = telebot.TeleBot(BOT_TOKEN)
+
+@bot.message_handler(commands=['start'])
+def start_handler(message):
+    # bot_with_admin.py faylini ishga tushirish
+    subprocess.Popen(["python", "bot_with_admin.py"])
+    
+    bot.reply_to(message, "✅ bot_with_admin.py fayli ishga tushdi jigar!")
 
 def run_bot():
     print("🤖 Bot ishga tushdi...")
