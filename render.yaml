@@ -4,7 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: python bot_with_admin_fixed.py
+    startCommand: python bot_with_admin.py
     envVars:
       - key: BOT_TOKEN
         value: "7953323094:AAE81rkkc8oAb5tp8W2dTCLJy55NRxlm_rs"
